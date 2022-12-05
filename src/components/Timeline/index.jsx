@@ -4,13 +4,14 @@ import coment from "../../assets/coment-icon.svg";
 import retweet from "../../assets/retweet-icon.svg";
 import like from "../../assets/like-icon.svg";
 import compartir from "../../assets/compartir-icon.svg";
-
+import icon from "../../icons";
 
 
 
 
 
 export  function Timeline() {
+  console.log(icon('like'))
   return (
     <>
       <div className='timeline-item'>
@@ -18,10 +19,10 @@ export  function Timeline() {
         <h4>Andres Laguilavo <span>@laguilavo16</span></h4>
         <p>Este es un texto de prueba para mirar como queda en twitetr clonsdashjdfjhasgfdjdhjkgasjkhdgasjhdghdgjkasjhdgashjkgdkshjadhjkgasdjgsadhjkasgdjhagsdkjh</p>
         <div className='interacciones-container'>
-          <button><img src={coment} alt="coment" /></button>
-          <button><img src={retweet} alt="retweet" /></button>
-          <button><img src={like} alt="like" /></button>
-          <button><img src={compartir} alt="compartir" /></button>
+          <button> {icon('coment')}</button>
+          <button>{icon('retweet')} </button>
+          <button>{icon('like')} </button>
+          <button>{icon('compartir')} </button>
         </div>
       </div>
     </>

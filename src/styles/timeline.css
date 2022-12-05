@@ -46,6 +46,6 @@
   cursor: pointer;
 }
 
-.interacciones-container > button > img{
+.interacciones-container > button > svg{
   width: 20px;
 }
