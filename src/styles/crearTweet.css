@@ -1,0 +1,46 @@
+.crear-tweet-container{
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--grey-border);
+}
+
+.crear-tweet{
+  display: flex;
+}
+
+.crear-tweet > img{
+  width: 50px;
+  border-radius: 50px;
+}
+
+.crear-tweet > input{
+  width: 100%;
+  background-color: var(--black);
+  border: none;
+  margin: 8px;
+}
+
+.iconos{
+  display: flex;
+  gap: 12px;
+  margin: 16px 50px;
+}
+
+.iconos > img{
+  width: 22px;
+}
+
+.btn-twittear{
+  background-color: var(--blue-twitter);
+  border-radius: 20px;
+  width: 92px;
+  padding: 10px 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
