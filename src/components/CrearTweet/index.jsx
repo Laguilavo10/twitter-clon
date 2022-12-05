@@ -11,7 +11,9 @@ export  function CrearTweet() {
   return (
     <>
     <section className='crear-tweet-container'>
-      <h3>Inicio</h3>
+        <div className='inicio-container'>
+          <h3>Inicio</h3>
+        </div>
       <div className='crear-tweet'>
         <img src="https://i.pinimg.com/236x/ce/59/83/ce59837dd46efcaa5549a75bf2b1e443.jpg" alt="" />
         <input type="text" placeholder='¿Que esta pasando?'/>

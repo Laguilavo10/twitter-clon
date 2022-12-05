@@ -1,0 +1,51 @@
+.timeline-item{
+  outline: 1px solid var(--grey-border);
+  border-top: 0;
+  padding: 16px 12px ;
+  display: grid;
+  grid-template-areas: 
+    "imagen nombre"
+    "imagen texto"
+    "imagen interacciones";
+  grid-template-columns: 70px calc(100% - 70px);
+}
+
+.timeline-item > img{
+  width: 50px;
+  border-radius: 50px;
+  grid-area: imagen;
+  justify-self: center;
+}
+
+.timeline-item > h4{
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.timeline-item > h4 > span{
+  font-weight: 800;
+  color: var(--grey-border);
+}
+
+.timeline-item > p{
+  margin-top: 4px;
+  word-wrap:break-word;
+  line-height: 1.5rem;
+}
+
+.interacciones-container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.interacciones-container > button{
+  background: none;
+  cursor: pointer;
+}
+
+.interacciones-container > button > img{
+  width: 20px;
+}

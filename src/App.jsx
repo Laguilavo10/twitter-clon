@@ -9,6 +9,9 @@ function App() {
      <main className='main-section'>
       <CrearTweet></CrearTweet>
       <Timeline></Timeline>
+      <Timeline></Timeline>
+      <Timeline></Timeline>
+      <Timeline></Timeline>
      </main>
     
     </>
