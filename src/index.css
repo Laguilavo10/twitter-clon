@@ -26,18 +26,41 @@
   flex-direction: column;
   max-width: 600px;
   overflow: auto;
+  width: 100%;
 }
 .main-section::-webkit-scrollbar {
   display: none;
 }
+
+
 
 @media (width < 1000px) {
   #root{
     grid-template-columns: 10% 50% 40%;
   }
   nav{
-    /* d */
-    margin: 10px auto !important;
+    padding: 0 !important;
+    margin: 10px auto;
+    min-width: 70px;
+  }
+  .links-nav{
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .links-nav > p {
+    display: none;
+  }
+}
+
+@media (width < 700px) {
+  #root{
+    grid-template-columns: 70px calc(100% - 70px);
+  }
+  nav{
+    padding: 0 !important;
+    margin: 10px auto;
+    min-width: 70px;
   }
   .links-nav{
     min-width: 50px;
