@@ -1,0 +1,33 @@
+nav{
+  margin: 10px 40px;
+  /* position: fixed; */
+}
+
+nav > svg:first-child{
+  margin-left: 12px;
+}
+
+svg{
+  min-width: 30px;
+  width: 30px;
+}
+.links-nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.links-nav > p {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.links-nav:hover
+{
+  background-color: rgba(231, 233,234,0.1);
+}
+
+

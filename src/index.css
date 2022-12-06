@@ -16,9 +16,33 @@
 #root{
   background-color: var(--black);
   font-family: 'Roboto', sans-serif;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 25% 50% 25%;
 }
+
 .main-section{
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  overflow: auto;
+}
+.main-section::-webkit-scrollbar {
+  display: none;
+}
+
+@media (width < 1000px) {
+  #root{
+    grid-template-columns: 10% 50% 40%;
+  }
+  nav{
+    /* d */
+    margin: 10px auto !important;
+  }
+  .links-nav{
+    min-width: 50px;
+  }
+  .links-nav > p {
+    display: none;
+  }
 }

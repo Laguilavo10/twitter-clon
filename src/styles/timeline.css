@@ -1,5 +1,5 @@
 .timeline-item{
-  outline: 1px solid var(--grey-border);
+  border: 1px solid var(--grey-border);
   border-top: 0;
   padding: 16px 12px ;
   display: grid;
@@ -8,7 +8,9 @@
     "imagen texto"
     "imagen interacciones";
   grid-template-columns: 70px calc(100% - 70px);
+
 }
+
 
 .timeline-item > img{
   width: 50px;
