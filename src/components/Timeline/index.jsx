@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../../styles/timeline.css";
-import icon from "../../icons";
+import icon from "../../utilities/icons";
 
 export function Timeline({data}) {
   const [isLike, setIsLike] = useState(false);

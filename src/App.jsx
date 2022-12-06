@@ -3,6 +3,7 @@ import "./index.css";
 import { CrearTweet } from "./components/CrearTweet";
 import { Timeline } from "./components/Timeline";
 import { NavLateral } from "./components/NavLateral";
+import { Tendencias } from "./components/Tendencias";
 import { useAPI } from "./hooks/useAPI";
 
 function App() {
@@ -13,11 +14,12 @@ function App() {
       <main className="main-section">
         <CrearTweet />
         {infoTweet ? (
-          infoTweet.map((data) => <Timeline data={data} />)
+          infoTweet.map((data) => <Timeline key={data.quote} data={data} />)
         ) : (
           <p>loading</p>
         )}
       </main>
+      <Tendencias></Tendencias>
     </>
   );
 }

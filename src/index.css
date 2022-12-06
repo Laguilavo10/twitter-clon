@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   color: aliceblue;
 
 }
@@ -10,7 +10,7 @@
 :root{
   --black: black;
   --blue-twitter: #1d9bf0;
-  --grey-border: #536467;
+  --grey-border: #2F3336;
 }
 
 #root{
@@ -18,19 +18,20 @@
   font-family: 'Roboto', sans-serif;
   display: grid;
   /* height: 100vh; */
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 25% 45% 30%;
 }
 
 .main-section{
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 700px;
   /* overflow: auto; */
   width: 100%;
 }
-.main-section::-webkit-scrollbar {
+
+/* .main-section::-webkit-scrollbar {
   display: none;
-}
+} */
 
 
 

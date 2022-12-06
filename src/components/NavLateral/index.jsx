@@ -1,7 +1,7 @@
 import React from 'react'
 import twitterLogo  from "../../assets/twitter-icon.svg";
 import '../../styles/navLateral.css'
-import icon from "../../icons"
+import icon from "../../utilities/icons"
 
 
 export  function NavLateral() {
