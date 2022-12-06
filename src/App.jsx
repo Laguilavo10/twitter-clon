@@ -3,19 +3,10 @@ import "./index.css";
 import { CrearTweet } from "./components/CrearTweet";
 import { Timeline } from "./components/Timeline";
 import { NavLateral } from "./components/NavLateral";
+import { useAPI } from "./hooks/useAPI";
 
 function App() {
-  const [infoTweet, setInfoTweet] = useState(null);
-
-  useEffect(() => {
-    let catidadTweets = 10;
-    const API_URL = `https://api.breakingbadquotes.xyz/v1/quotes/${catidadTweets}`;
-
-    fetch(API_URL)
-      .then((res) => res.json())
-      .then((data) => setInfoTweet(data));
-  }, []);
-
+  const {infoTweet} = useAPI('https://api.breakingbadquotes.xyz/v1/quotes/', 10)
   return (
     <>
       <NavLateral />

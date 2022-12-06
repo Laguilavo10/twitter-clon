@@ -21,7 +21,7 @@ export function Timeline({data}) {
           alt=""
         />
         <h4>
-        {data.author} <span>@{data.author}</span>
+        {data.author} <span>@{data.author.split(' ').join('')}</span>
         </h4>
         <p>{data.quote}</p>
         <div className="interacciones-container">
