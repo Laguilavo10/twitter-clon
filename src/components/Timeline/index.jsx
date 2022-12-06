@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../styles/timeline.css";
 import icon from "../../icons";
 
-export function Timeline() {
+export function Timeline({data}) {
   const [isLike, setIsLike] = useState(false);
   const [isRetweet, setIsRetweet] = useState(false);
+
 
   function toggleBtns(boton, btnFunction) {
     btnFunction(!boton);
@@ -20,12 +21,9 @@ export function Timeline() {
           alt=""
         />
         <h4>
-          Andres Laguilavo <span>@laguilavo16</span>
+        {data.author} <span>@{data.author}</span>
         </h4>
-        <p>
-          Este es un texto de prueba para mirar como queda en twitetr
-          clonsdashjdfjhasgfdjdhjkgasjkhdgasjhdghdgjkasjhdgashjkgdkshjadhjkgasdjgsadhjkasgdjhagsdkjh
-        </p>
+        <p>{data.quote}</p>
         <div className="interacciones-container">
           <button> {icon("coment")}</button>
           <button onClick={() => toggleBtns(isRetweet, setIsRetweet)}>

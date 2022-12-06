@@ -1,13 +1,16 @@
 nav{
   padding: 10px 40px;
   width: 100%;
+  position:sticky;
+  top: 0;
+  height: 100vh;
 }
 
 nav > svg:first-child{
   margin-left: 12px;
 }
 
-nav > svg{
+nav svg{
   min-width: 30px;
   width: 30px;
 }

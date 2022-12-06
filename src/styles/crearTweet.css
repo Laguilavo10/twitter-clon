@@ -42,11 +42,12 @@
   display: flex;
   gap: 12px;
   margin: 16px 50px;
-  cursor: pointer;
+  overflow: hidden;
 }
 
 .iconos > img{
   width: 22px;
+  cursor: pointer;
 }
 
 .btn-twittear{

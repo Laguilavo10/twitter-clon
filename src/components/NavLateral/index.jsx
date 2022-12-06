@@ -2,8 +2,9 @@ import React from 'react'
 import twitterLogo  from "../../assets/twitter-icon.svg";
 import '../../styles/navLateral.css'
 import icon from "../../icons"
+
+
 export  function NavLateral() {
-  console.log(icon('inicio'))
   return (
     <>
     <nav>
